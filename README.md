@@ -20,7 +20,7 @@ which contains:
 
 @primary-color : #f5222d;       // and define the variables which are uses in the library
 ```
-here is the link of the full variables [enter link description here][1]
+The link of the full variables [here][1]
 
 [1]: https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/scripts/site/_site/doc/theme.less
 
