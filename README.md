@@ -14,7 +14,7 @@ The example is for the project which uses `.less` styles in the project
 
 2. Create the **theme.less** file in `src` folder,
 which contains:
-```
+```css
 @import "../node_modules/ng-zorro-antd/ng-zorro-antd.less";     // this is important
 
 
@@ -92,6 +92,8 @@ export class AppComponent {
 ```
 
 I hope this can help you easily organize the runtime theme switching.
+
+---
 
 ## Code scaffolding
 
