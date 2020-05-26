@@ -1,17 +1,45 @@
-<!-- NG-ZORRO -->
-<a
-  href="https://github.com/NG-ZORRO/ng-zorro-antd"
-  target="_blank"
-  style="display: flex;align-items: center;justify-content: center;height: 70%;width: 100%;">
-  <img
-    height="300"
-    src="https://img.alicdn.com/tfs/TB1X.qJJgHqK1RjSZFgXXa7JXXa-89-131.svg">
-</a>
-<div style="display: flex; width: 100%; align-items: center; justify-content: center;">
+<div style="display: flex; justify-content: center; align-items: center; margin: 10px;">
   <button
     nz-button
-    nzType="primary"
+    class="test"
+    [nzType]="'primary'"
     (click)="changeTheme()">
     Change Theme
-  </button> 
+  </button>
 </div>
+<br>
+<button
+  nz-button
+  class="test"
+  [nzType]="'primary'"
+  nzDanger>
+  Danger Button
+</button>
+<br>
+<span nz-typography>Ant Design</span>
+<br>
+<span
+  nz-typography
+  nzType="secondary">Ant Design</span>
+<br>
+<span
+  nz-typography
+  nzType="warning">Ant Design</span>
+<br>
+<span
+  nz-typography
+  nzType="danger">Ant Design</span>
+<br>
+<span
+  nz-typography
+  nzDisabled>Ant Design</span>
+<br>
+<span nz-typography><mark>Ant Design</mark></span>
+<br>
+<span nz-typography><code>Ant Design</code></span>
+<br>
+<span nz-typography><u>Ant Design</u></span>
+<br>
+<span nz-typography><del>Ant Design</del></span>
+<br>
+<span nz-typography><strong>Ant Design</strong></span>

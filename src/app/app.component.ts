@@ -12,9 +12,9 @@ export class AppComponent {
     this.theme = this.theme === 'dark' ? '' : 'dark';
     const style = document.getElementById('theme-link') as HTMLLinkElement;
     if (this.theme === 'dark') {
-      style.href = '/assets/themes/style.dark.css';
+      style.href = '/assets/themes/dark.css';
     } else {
-      style.href = '/assets/themes/style.compact.css';
+      style.href = '/assets/themes/compact.css';
     }
   }
 }
