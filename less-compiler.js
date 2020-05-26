@@ -20,7 +20,7 @@ less.render(`${basicStyles}`, {
       // you need to add your color variables here
       // you can find the full variables list here
       // https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/scripts/site/_site/doc/theme.less
-      'primary-color': '#111521',
+      'primary-color': '#36ac19',
       'error-color': 'green'
     }
   }
@@ -40,6 +40,7 @@ less.render(`${basicStyles}`, {
   plugins: [new LessPluginCleanCSS({ advanced: true })],
   modifyVars: {
     ...darkThemeVars,
+    ...compactThemeVars,
     ...{
       // for the dark theme
       // you need to add your color variables here

@@ -17,4 +17,22 @@ export class AppComponent {
       style.href = '/assets/themes/compact.css';
     }
   }
+
+
+
+  // some property for small demo
+  // ---------------------------------------------------------------------------
+
+
+
+
+  // tslint:disable-next-line: member-ordering
+  inputValue?: string;
+  // tslint:disable-next-line: member-ordering
+  options: string[] = [];
+
+  onInput(event: Event): void {
+    const value = (event.target as HTMLInputElement).value;
+    this.options = value ? [value, value + value, value + value + value] : [];
+  }
 }

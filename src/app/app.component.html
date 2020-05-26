@@ -2,44 +2,120 @@
   <button
     nz-button
     class="test"
-    [nzType]="'primary'"
     (click)="changeTheme()">
     Change Theme
   </button>
 </div>
-<br>
+<nz-divider></nz-divider>
 <button
   nz-button
   class="test"
-  [nzType]="'primary'"
+  [nzType]="'dashed'"
   nzDanger>
   Danger Button
 </button>
-<br>
+<nz-divider></nz-divider>
 <span nz-typography>Ant Design</span>
-<br>
 <span
   nz-typography
   nzType="secondary">Ant Design</span>
-<br>
 <span
   nz-typography
   nzType="warning">Ant Design</span>
-<br>
 <span
   nz-typography
   nzType="danger">Ant Design</span>
-<br>
 <span
   nz-typography
   nzDisabled>Ant Design</span>
-<br>
 <span nz-typography><mark>Ant Design</mark></span>
-<br>
 <span nz-typography><code>Ant Design</code></span>
-<br>
 <span nz-typography><u>Ant Design</u></span>
-<br>
 <span nz-typography><del>Ant Design</del></span>
-<br>
 <span nz-typography><strong>Ant Design</strong></span>
+<nz-divider></nz-divider>
+<nz-pagination
+  [nzPageIndex]="1"
+  [nzTotal]="50"></nz-pagination>
+
+<nz-divider></nz-divider>
+<nz-steps
+  [nzCurrent]="1"
+  nzSize="small">
+  <nz-step nzTitle="Finished"></nz-step>
+  <nz-step nzTitle="In Progress"></nz-step>
+  <nz-step nzTitle="Waiting"></nz-step>
+</nz-steps>
+<nz-divider></nz-divider>
+<div class="example-input">
+  <input
+    placeholder="input here"
+    nz-input
+    [(ngModel)]="inputValue"
+    (input)="onInput($event)"
+    [nzAutocomplete]="auto">
+  <nz-autocomplete
+    [nzDataSource]="options"
+    nzBackfill
+    #auto></nz-autocomplete>
+</div>
+<nz-divider></nz-divider>
+
+<nz-date-picker></nz-date-picker>
+
+<nz-divider></nz-divider>
+<label nz-checkbox>Checkbox 1</label>
+<label nz-checkbox>Checkbox 2</label>
+<label nz-checkbox>Checkbox 3</label>
+
+<nz-divider></nz-divider>
+<label
+  nz-radio
+  ngModel>
+  Radio
+</label>
+
+<nz-divider></nz-divider>
+<nz-rate
+  [ngModel]="2.5"
+  nzAllowHalf></nz-rate>
+
+<nz-divider></nz-divider>
+<nz-select
+  nzShowSearch
+  nzAllowClear
+  nzPlaceHolder="Select a person">
+  <nz-option
+    nzLabel="Jack"
+    nzValue="jack"></nz-option>
+  <nz-option
+    nzLabel="Lucy"
+    nzValue="lucy"></nz-option>
+  <nz-option
+    nzLabel="Tom"
+    nzValue="tom"></nz-option>
+</nz-select>
+
+<nz-divider></nz-divider>
+<nz-slider></nz-slider>
+<nz-slider [nzDisabled]="true"></nz-slider>
+
+<nz-divider></nz-divider>
+<nz-switch
+  [nzUnCheckedChildren]="'default'"
+  [nzCheckedChildren]="'customize'"></nz-switch>
+
+<nz-divider></nz-divider>
+<nz-time-picker></nz-time-picker>
+<nz-divider></nz-divider>
+<nz-tag [nzColor]="'magenta'">magenta</nz-tag>
+<nz-tag [nzColor]="'red'">red</nz-tag>
+<nz-tag [nzColor]="'volcano'">volcano</nz-tag>
+<nz-tag [nzColor]="'orange'">orange</nz-tag>
+<nz-tag [nzColor]="'gold'">gold</nz-tag>
+<nz-tag [nzColor]="'lime'">lime</nz-tag>
+<nz-tag [nzColor]="'green'">green</nz-tag>
+<nz-tag [nzColor]="'cyan'">cyan</nz-tag>
+<nz-tag [nzColor]="'blue'">blue</nz-tag>
+<nz-tag [nzColor]="'geekblue'">geekblue</nz-tag>
+<nz-tag [nzColor]="'purple'">purple</nz-tag>
