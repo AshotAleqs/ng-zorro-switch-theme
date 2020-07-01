@@ -37,7 +37,8 @@ less.render(`${basicStyles}`, {
       // you can find the full variables list here
       // https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/scripts/site/_site/doc/theme.less
       'primary-color': '#111521',
-      'error-color': 'green'
+      'error-color': 'green',
+      'text-color': '#fffff1'
     }
   }
 }).then(data => {
